@@ -20,11 +20,13 @@ WHOZ_SECRET = os.environ.get("WHOZ_SECRET")
 WHOZ_FEDERATION_ID = os.environ.get("WHOZ_FEDERATION_ID")
 BIGQUERY_TABLE_NAME_TALENTS = os.environ.get("BIGQUERY_TABLE_NAME_TALENTS")
 
+print("Hello")
+
 def main(e=None) -> None:
     start = datetime.now()
     logging.info(f"Start: {start}")
     timestamp = str(start)
-
+    print("I'm in")
     whoz_client = WhozClient(WHOZ_CLIENT_ID, WHOZ_SECRET, WHOZ_FEDERATION_ID)
 
     # Month list generation

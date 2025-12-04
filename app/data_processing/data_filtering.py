@@ -8,6 +8,9 @@ class ProcessForBigQuery:
 
 
     def clean_talents(talents: list, timestamp: str) -> list:
+        """
+        Clean the talent table
+        """
         cleaned_talents = []
         for talent in talents:
             # https://whoz.stoplight.io/docs/whoz-api/4b21183f6dc28-talent

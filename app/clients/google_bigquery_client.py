@@ -10,7 +10,7 @@ from app.utils import is_empty, remove_empty_elements
 
 load_dotenv()
 GOOGLE_SCOPES = ["https://www.googleapis.com/auth/bigquery"]
-BIGQUERY_DATASET_ID = os.environ.get("BIGQUERY_DATASET_ID")
+BIGQUERY_DATASET_ID = os.getenv("BIGQUERY_DATASET_ID")
 PROJECT_ID = BIGQUERY_DATASET_ID.split(".")[0]
 
 
